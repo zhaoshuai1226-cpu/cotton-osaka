@@ -44,7 +44,7 @@ export function ProductGrid({ products, categories, makers, onSelectProduct }: P
   };
 
   return (
-    <section id="products" className="bg-bishu-100 pt-28 pb-24 min-h-screen">
+    <section id="products" className="bg-bishu-100 pt-28 pb-32 min-h-screen">
       <div className="mx-auto max-w-8xl px-5 sm:px-8 lg:px-12">
         {/* Section heading */}
         <div className="mb-12">

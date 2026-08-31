@@ -66,7 +66,7 @@ export function Home({ products, categories, onExplore, onSelectProduct, onViewM
                 <button
                   key={p.id}
                   onClick={() => onSelectProduct(p)}
-                  className="reveal group text-left"
+                  className="reveal group flex h-full flex-col text-left"
                   style={{ transitionDelay: `${i * 80}ms` }}
                 >
                   <div className="relative aspect-square overflow-hidden bg-bishu-200">
@@ -77,10 +77,10 @@ export function Home({ products, categories, onExplore, onSelectProduct, onViewM
                     />
                     <div className="absolute inset-0 bg-bishu-950/0 group-hover:bg-bishu-950/15 transition-colors duration-500" />
                   </div>
-                  <h3 className="font-serif-display text-lg text-bishu-900 mt-4 group-hover:text-accent-dark transition-colors leading-snug">
+                  <h3 className="font-serif-display text-lg text-bishu-900 mt-4 min-h-[3.25rem] line-clamp-2 group-hover:text-accent-dark transition-colors leading-snug">
                     {p.name_en ?? p.name}
                   </h3>
-                  <p className="text-xs text-bishu-500 mt-1">{p.maker?.name_en}</p>
+                  <p className="text-xs text-bishu-500 mt-auto pt-1">{p.maker?.name_en}</p>
                 </button>
               ))}
             </div>
@@ -106,7 +106,7 @@ export function Home({ products, categories, onExplore, onSelectProduct, onViewM
                 <button
                   key={cat.id}
                   onClick={onExplore}
-                  className="reveal bg-bishu-900 p-8 text-center hover:bg-bishu-800 transition-all group"
+                  className="reveal bg-bishu-900 p-8 text-center hover:bg-bishu-800 transition-all group last:col-span-2 md:last:col-span-1"
                   style={{ transitionDelay: `${i * 60}ms` }}
                 >
                   <p className="font-serif-display text-2xl text-bishu-50 group-hover:text-accent-light transition-colors">

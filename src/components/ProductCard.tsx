@@ -44,12 +44,12 @@ export function ProductCard({ product, onClick, index }: ProductCardProps) {
       </div>
 
       {/* Text */}
-      <div className="pt-4">
-        <h3 className="font-serif-display text-lg text-bishu-900 leading-snug group-hover:text-accent-dark transition-colors">
+      <div className="flex flex-1 flex-col pt-4">
+        <h3 className="font-serif-display text-lg text-bishu-900 leading-snug min-h-[3.25rem] line-clamp-2 group-hover:text-accent-dark transition-colors">
           {product.name_en ?? product.name}
         </h3>
         <p className="text-xs text-bishu-500 mt-1 line-clamp-1">{product.name}</p>
-        <div className="mt-3 flex items-center justify-between">
+        <div className="mt-auto flex items-center justify-between pt-3">
           <span className="text-xs text-bishu-600 font-light">
             {product.maker?.name_en ?? product.maker?.name ?? '—'}
           </span>
