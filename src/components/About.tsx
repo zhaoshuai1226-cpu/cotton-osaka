@@ -45,10 +45,12 @@ export function About({ onExplore }: AboutProps) {
             { num: 'Japan', label: '日本製', en: 'Made in Japan' },
             { num: 'Soon', label: '製造者情報は準備中', en: 'Makers coming soon' },
           ].map((stat) => (
-            <div key={stat.en} className="bg-bishu-900 p-8 text-center">
-              <p className="font-serif-display text-4xl text-accent-light font-light">{stat.num}</p>
-              <p className="text-sm text-bishu-200 mt-2 font-light">{stat.label}</p>
-              <p className="text-[10px] tracking-[0.2em] uppercase text-bishu-500 mt-1">
+            <div key={stat.en} className="bg-bishu-900 px-4 py-8 sm:p-8 text-center flex flex-col justify-between h-full">
+              <div>
+                <p className="font-serif-display text-4xl text-accent-light font-light">{stat.num}</p>
+                <p className="text-sm text-bishu-200 mt-2 font-light">{stat.label}</p>
+              </div>
+              <p className="text-[10px] tracking-[0.2em] uppercase text-bishu-500 mt-4">
                 {stat.en}
               </p>
             </div>
