@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Menu, X, Search } from 'lucide-react';
-import { asset } from '@/lib/asset';
 
 interface HeaderProps {
   onNavigate: (view: 'home' | 'products' | 'makers' | 'about') => void;
@@ -42,15 +41,15 @@ export function Header({ onNavigate, onSearch }: HeaderProps) {
           <button
             onClick={() => handleNav('home')}
             className="flex items-center shrink-0"
-            aria-label="WATA BIYORI home"
+            aria-label="純綿 ホーム"
           >
-            <img
-              src={asset("logo.svg")}
-              alt="WATA BIYORI"
-              className={`w-auto object-contain object-left transition-all duration-500 ${
-                scrolled ? 'h-12' : 'h-14'
+            <span
+              className={`font-serif-display font-light tracking-[0.2em] text-bishu-900 transition-all duration-500 ${
+                scrolled ? 'text-2xl' : 'text-3xl'
               }`}
-            />
+            >
+              純綿
+            </span>
           </button>
 
           <nav className="hidden md:flex items-center gap-10">

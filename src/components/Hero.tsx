@@ -10,7 +10,7 @@ export function Hero({ onExplore }: HeroProps) {
     <section className="relative h-screen min-h-[640px] w-full overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src={asset("hero-cotton.jpg")}
+          src={asset('hero-cotton.jpg')}
           alt="Raw cotton"
           className="h-full w-full object-cover animate-ken-burns"
         />
@@ -20,12 +20,9 @@ export function Hero({ onExplore }: HeroProps) {
 
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center px-6">
         <div className="animate-fade-up">
-          <h1 className="sr-only">WATA BIYORI — 綿日和</h1>
-          <img
-            src={asset("logo.svg")}
-            alt="WATA BIYORI"
-            className="mx-auto h-44 sm:h-52 lg:h-60 w-auto object-contain drop-shadow-[0_12px_40px_rgba(246,243,238,0.28)]"
-          />
+          <h1 className="font-serif-display text-bishu-50 font-light tracking-[0.35em] text-5xl sm:text-6xl lg:text-7xl drop-shadow-[0_12px_40px_rgba(246,243,238,0.28)]">
+            純綿
+          </h1>
           <p className="font-serif-display text-bishu-50 text-xl sm:text-2xl lg:text-3xl font-light italic mt-8">
             その人の最高の素材でありたい
           </p>
