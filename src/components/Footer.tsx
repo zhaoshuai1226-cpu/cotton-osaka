@@ -13,11 +13,9 @@ export function Footer({ onNavigate }: FooterProps) {
       <div className="mx-auto max-w-8xl px-5 sm:px-8 lg:px-12 py-16">
         <div className="grid md:grid-cols-4 gap-10">
           <div className="md:col-span-2">
-            <div className="inline-flex items-center bg-bishu-100 px-8 py-7">
-              <span className="font-serif-display text-4xl font-light tracking-[0.25em] text-bishu-900">
-                純綿
-              </span>
-            </div>
+            <p className="font-serif-display text-4xl sm:text-5xl font-light tracking-[0.3em] text-accent-light">
+              純綿
+            </p>
             <p className="mt-6 text-sm font-light leading-relaxed max-w-md text-bishu-400">
               Cotton Osaka。大阪から届ける、上質なコットン。
             </p>
