@@ -22,3 +22,7 @@ dist-ssr
 *.sw?
 .env
 .bolt
+
+# local-only
+project.code-workspace
+*.code-workspace
